@@ -54,6 +54,18 @@ pip install -r requirements.txt
 
 ---
 
+
+## 🗂️ Datasets
+
+You can download the datasets used in this project from the following sources:
+
+1. [WikiArt Dataset](https://www.wikiart.org/)
+2. [Kaggle Dataset](https://www.kaggle.com/)
+3. [Art2Photo on AI Studio](https://aistudio.baidu.com/global/search?keyword=art2photo&tab=ALL)
+4. [MS-COCO Dataset](https://paperswithcode.com/dataset/coco)
+
+---
+
 ## 🚀 Usage
 
 ### ✅ Train the Model
