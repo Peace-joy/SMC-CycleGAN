@@ -341,7 +341,7 @@ class ResnetGenerator(nn.Module):
         mult = 2 ** n_downsampling
         model += [SelfAttention(ngf * mult)]
         for i in range(n_blocks):
-            if i >= n_blocks - 3:  # 在中间三分之一块加入多尺度
+            if i >= n_blocks - 3:  
                 model += [MultiScaleResnetBlock(ngf * mult, padding_type=padding_type, norm_layer=norm_layer,
                                                 use_dropout=use_dropout, use_bias=use_bias)]
             else:
@@ -371,14 +371,13 @@ class ResnetGenerator(nn.Module):
 class ResnetBlock(nn.Module):
     """Define a Resnet block"""
 
-    def __init__(self, dim, padding_type, norm_layer, use_dropout, use_bias, use_cbam=False):
+    def __init__(self, dim, padding_type, norm_layer, use_dropout, use_bias):
         """Initialize the Resnet block
 
         A resnet block is a conv block with skip connections.
         CBAM can optionally be added to the block.
         """
         super(ResnetBlock, self).__init__()
-        self.use_cbam = use_cbam  # 是否启用 CBAM
         self.conv_block = self.build_conv_block(dim, padding_type, norm_layer, use_dropout, use_bias)
 
 
@@ -416,8 +415,6 @@ class ResnetBlock(nn.Module):
     def forward(self, x):
         """Forward function (with skip connections)"""
         out = self.conv_block(x)
-        if self.use_cbam:
-            out = self.cbam(out)  # 应用 CBAM（如果启用）
         return x + out  # 跳跃连接
 
 class MultiScaleResnetBlock(nn.Module):
