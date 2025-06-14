@@ -86,14 +86,6 @@ Evaluation mode will generate style-transferred images for the test dataset.
 
 > "This code is directly related to our manuscript currently submitted to *The Visual Computer*. If you find this work helpful, please consider citing our paper."
 
-```bibtex
-@article{gao2025smc,
-  title={Enhancing Cross-Domain Image Style Transfer with Self-Attention and Multi-Scale Features in SMC-CycleGAN},
-  author={Xinhao Gao and Fuwei Wang and Weimin Wang and Mingxin Chen and Zhao Liu and Shenyi Cao},
-  journal={Preprint},
-  year={2025}
-}
-```
 
 ---
 
