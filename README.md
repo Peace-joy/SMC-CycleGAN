@@ -57,7 +57,7 @@ pip install -r requirements.txt
 
 ## 🗂️ Datasets
 
-You can download the datasets used in this project from the following sources:
+You can download the public datasets used in this project from the following sources:
 
 1. [WikiArt Dataset](https://www.wikiart.org/)
 2. [Kaggle Dataset](https://www.kaggle.com/)
