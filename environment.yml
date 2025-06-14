@@ -1,0 +1,17 @@
+name: CycleGAN
+channels:
+- pytorch
+- defaults
+dependencies:
+- python=3.8
+- pytorch=2.1.0
+- scipy
+- pip
+- pip:
+  - dominate==2.9.1
+  - torchvision==0.16.0
+  - Pillow==10.4.0
+  - numpy==1.24.3
+  - visdom==0.1.8.8
+  - wandb==0.18.5
+
