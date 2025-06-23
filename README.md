@@ -81,7 +81,7 @@ You can download the public datasets used in this project from the following sou
 python train.py --dataroot ./datasets/photos2image --name transfer --model cycle_gan --direction BtoA
 ```
 
-Training configuration (epochs, batch size, learning rate, dataset path) can be set directly in `train.py`.
+Training configuration (epochs, batch size, learning rate, dataset path) can be set directly in `train_options.py`.
 
 ### 🧪 Test the Model
 
