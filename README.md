@@ -63,6 +63,7 @@ You can download the public datasets used in this project from the following sou
 2. [Kaggle Dataset](https://www.kaggle.com/)
 3. [Art2Photo on AI Studio](https://aistudio.baidu.com/global/search?keyword=art2photo&tab=ALL)
 4. [MS-COCO Dataset](https://paperswithcode.com/dataset/coco)
+The dataset settings are as follows：
 ```
 ├── datasets
   ├── photos2image
