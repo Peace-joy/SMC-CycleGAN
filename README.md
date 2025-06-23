@@ -64,7 +64,7 @@ You can download the public datasets used in this project from the following sou
 3. [Art2Photo on AI Studio](https://aistudio.baidu.com/global/search?keyword=art2photo&tab=ALL)
 4. [MS-COCO Dataset](https://paperswithcode.com/dataset/coco)
 |-datasets
-  |-photo2image
+  |-photos2image
     |-trainA
     |-trainB
     |-testA
@@ -76,7 +76,7 @@ You can download the public datasets used in this project from the following sou
 ### ✅ Train the Model
 
 ```bash
-python train.py
+python train.py --dataroot ./datasets/photos2image --name transfer --model cycle_gan --direction BtoA
 ```
 
 Training configuration (epochs, batch size, learning rate, dataset path) can be set directly in `train.py`.
@@ -84,7 +84,11 @@ Training configuration (epochs, batch size, learning rate, dataset path) can be 
 ### 🧪 Test the Model
 
 ```bash
-python test.py
+    Test a CycleGAN model (both sides):
+        python test.py --dataroot ./datasets/photos2image --name transfer --model cycle_gan
+
+    Test a CycleGAN model (one side only):
+        python test.py --dataroot ./datasets/photos2image/testA --name transfer --model test --no_dropout
 ```
 
 Evaluation mode will generate style-transferred images for the test dataset.
