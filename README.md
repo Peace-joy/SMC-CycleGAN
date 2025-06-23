@@ -23,12 +23,6 @@ This repository contains the official PyTorch implementation of **SMC-CycleGAN**
 ├── .gitignore
 ├── .replit
 ├── LICENSE
-|-datasets
-  |-photo2image
-    |-trainA
-    |-trainB
-    |-testA
-    |-testB
 └── README.md
 ```
   
