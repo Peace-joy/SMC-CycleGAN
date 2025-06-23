@@ -97,8 +97,8 @@ Evaluation mode will generate style-transferred images for the test dataset.
 
 ## 🧠 Core Contributions
 
-- **SAFM**: Enhances global contextual awareness using self-attention after the encoder.
-- **MSFM**: Extracts features at multiple scales to retain both low- and high-frequency information.
+- **Self-Attention**: Enhances global contextual awareness using self-attention after the encoder.
+- **Multi-Scale Feature Extraction**: Extracts features at multiple scales to retain both low- and high-frequency information.
 - **CycleGAN Backbone**: Built upon CycleGAN with modular improvements for better domain translation.
 
 ---
