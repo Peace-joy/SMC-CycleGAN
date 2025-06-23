@@ -33,7 +33,7 @@ This repository contains the official PyTorch implementation of **SMC-CycleGAN**
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your_username>/SMC-CycleGAN.git
+git clone https://github.com/Peace-joy/SMC-CycleGAN.git
 cd SMC-CycleGAN
 ```
 
